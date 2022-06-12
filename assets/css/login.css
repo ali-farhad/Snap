@@ -295,6 +295,7 @@
     color: white;
     padding: 1rem;
     border: 1px solid white;
+    transition: all var(--transition-1);
 
 }
 
@@ -303,6 +304,8 @@
     outline: 1px solid red;
     width: 100%;
     padding: 1rem;
+    transition: all var(--transition-1);
+
 }
 
 .input-box input::placeholder {
