@@ -385,7 +385,7 @@
       <main id="main-container">
         <!-- Hero -->
         <div class="bg-body-light">
-          <div class="content content-full">
+          <div class="content content-full py-2">
             <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center py-2">
               <div class="flex-grow-1">
                 <h1 class="h3 fw-bold mb-2">
@@ -416,35 +416,33 @@
         <!-- Page Content -->
         <div class="content">
           <!-- Your Block -->
-         <div class="row items-">
+         <div class="row items-push justify-content-center">
           <div class="col-sm-4">
-            <div class="block block-rounded h-100">
+            <div class="block block-rounded h-100 py-4">
               <div class="block-content d-flex flex-column align-items-center">
 
-                <div class="block-img w-25">
+                <div class="block-img w-50">
                   <img src="./assets/media/avatars/add_customer.svg" alt="add customer icon">
                 </div>
 
-                <p class="fw-bold mb-0">Add a Client</p>
-                <p>Create a space for each client's financial transactions.</p>
-                <button type="button" class="btn btn-success">Add a Client</button>
+                <p class="fw-bold my-4">Add a Client</p>
+                <p class="text-center">Create a space for each client's financial transactions.</p>
+                <button type="button" class="btn btn-sm btn-success">Add a Client</button>
               </div>
             </div>
           </div>
 
           <div class="col-sm-4">
-            <div class="block block-rounded h-100 mb-0">
-              <div class="block block-rounded h-100">
-                <div class="block-content d-flex flex-column align-items-center">
-  
-                  <div class="block-img w-25">
-                    <img src="./assets/media/avatars/add_customer.svg" alt="add customer icon">
-                  </div>
-  
-                  <p class="fw-bold mb-0">Add a Client</p>
-                  <p>Create a space for each client's financial transactions.</p>
-                  <button type="button" class="btn btn-success">Add a Client</button>
+            <div class="block block-rounded h-100 mb-0 py-4">
+              <div class="block-content d-flex flex-column align-items-center">
+
+                <div class="block-img w-50">
+                  <img src="./assets/media/avatars/demo_account.svg" alt="add customer icon">
                 </div>
+
+                <p class="fw-bold my-4">Try the demo account</p>
+                <p class="text-center">Have a play with Prepare, complete with dummy data.</p>
+                <button type="button" class="btn-sm btn btn-light">Launch Demo Account</button>
               </div>
             </div>
           </div>
@@ -477,4 +475,9 @@
     <!--
         OneUI JS
 
-        Core librari
+        Core libraries and functionality
+        webpack is putting everything together at assets/_js/main/app.js
+    -->
+    <script src="assets/js/oneui.app.min.js"></script>
+  </body>
+</html>
