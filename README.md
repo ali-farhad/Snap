@@ -1,7 +1,8 @@
-# DigixTech
+# Snap
 
-This is our Agency Portfolio Website.
+This is our Landing page for software called SNAP.
+It is an AI powered accounting software, which extracts data from inovices/sales/receipts and uploads them automatically to other accounting softwares, such as Quickbook, Xero etc.
 
 It is created by modern CSS3 and does not use any frameworks for styling. 
 
-all the images, illustrations and fonts used herein are stock and/or OpenSource. 
+It uses laravel for backend.
