@@ -29,6 +29,39 @@
     <!-- Fonts and OneUI framework -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" id="css-main" href="assets/css/oneui.min.css">
+
+    <style>
+
+      .software-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 500px);
+        gap: 5px;
+        justify-content: center;
+      
+       
+      }
+
+      .software-grid .block {
+        cursor: pointer;
+        opacity: 0.1;
+        transition: opacity 0.2s ease-in-out;
+      }
+
+      .software-grid .block:hover {
+        opacity: 1;
+
+      }
+
+      .software-grid .block img {
+        width: 100%;
+        object-fit: cover;
+
+        
+      }
+   
+
+  
+    </style>
   </head>
   <body>
     <!-- Page Container -->
@@ -259,17 +292,17 @@
                 </a>
                 <ul class="nav-main-submenu">
                   <li class="nav-main-item">
-                    <a class="nav-main-link" href="/dashboard/mydetails.html">
+                    <a class="nav-main-link" href="javascript:void(0)">
                       <span class="nav-main-link-name">My Details</span>
                     </a>
                   </li>
                   <li class="nav-main-item">
-                    <a class="nav-main-link" href="/dashboard/accdetails.html">
+                    <a class="nav-main-link" href="javascript:void(0)">
                       <span class="nav-main-link-name">Account Details</span>
                     </a>
                   </li>
                   <li class="nav-main-item">
-                    <a class="nav-main-link" href="/dashboard/subscription.html">
+                    <a class="nav-main-link" href="javascript:void(0)">
                       <span class="nav-main-link-name">Subscriptions</span>
                     </a>
                   </li>
@@ -362,93 +395,92 @@
               </div>
             </div>
             <!-- END User Dropdown -->
-
-            <!-- Notifications Dropdown -->
-            <div class="dropdown d-inline-block ms-2">
-              <button type="button" class="btn btn-sm btn-alt-secondary" id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fa fa-fw fa-bell"></i>
-                <span class="text-primary">•</span>
-              </button>
-              <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0 border-0 fs-sm" aria-labelledby="page-header-notifications-dropdown">
-                <div class="p-2 bg-body-light border-bottom text-center rounded-top">
-                  <h5 class="dropdown-header text-uppercase">Notifications</h5>
-                </div>
-                <ul class="nav-items mb-0">
-                  <li>
-                    <a class="text-dark d-flex py-2" href="javascript:void(0)">
-                      <div class="flex-shrink-0 me-2 ms-3">
-                        <i class="fa fa-fw fa-check-circle text-success"></i>
-                      </div>
-                      <div class="flex-grow-1 pe-2">
-                        <div class="fw-semibold">You Uploaded New Document</div>
-                        <span class="fw-medium text-muted">15 min ago</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="text-dark d-flex py-2" href="javascript:void(0)">
-                      <div class="flex-shrink-0 me-2 ms-3">
-                        <i class="fa fa-fw fa-plus-circle text-primary"></i>
-                      </div>
-                      <div class="flex-grow-1 pe-2">
-                        <div class="fw-semibold">1 new document sent successfully</div>
-                        <span class="fw-medium text-muted">22 min ago</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="text-dark d-flex py-2" href="javascript:void(0)">
-                      <div class="flex-shrink-0 me-2 ms-3">
-                        <i class="fa fa-fw fa-times-circle text-danger"></i>
-                      </div>
-                      <div class="flex-grow-1 pe-2">
-                        <div class="fw-semibold">Auto Extractioin Failed, review the doc manually</div>
-                        <span class="fw-medium text-muted">26 min ago</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="text-dark d-flex py-2" href="javascript:void(0)">
-                      <div class="flex-shrink-0 me-2 ms-3">
-                        <i class="fa fa-fw fa-plus-circle text-primary"></i>
-                      </div>
-                      <div class="flex-grow-1 pe-2">
-                        <div class="fw-semibold">2 new docs uploaded, keep it up</div>
-                        <span class="fw-medium text-muted">33 min ago</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="text-dark d-flex py-2" href="javascript:void(0)">
-                      <div class="flex-shrink-0 me-2 ms-3">
-                        <i class="fa fa-fw fa-user-plus text-success"></i>
-                      </div>
-                      <div class="flex-grow-1 pe-2">
-                        <div class="fw-semibold">You have a new subscriber</div>
-                        <span class="fw-medium text-muted">41 min ago</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="text-dark d-flex py-2" href="javascript:void(0)">
-                      <div class="flex-shrink-0 me-2 ms-3">
-                        <i class="fa fa-fw fa-check-circle text-success"></i>
-                      </div>
-                      <div class="flex-grow-1 pe-2">
-                        <div class="fw-semibold">You have a new doc ready</div>
-                        <span class="fw-medium text-muted">42 min ago</span>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-                <div class="p-2 border-top text-center">
-                  <a class="d-inline-block fw-medium" href="javascript:void(0)">
-                    <i class="fa fa-fw fa-arrow-down me-1 opacity-50"></i> Load More..
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- END Notifications Dropdown -->
+ <!-- Notifications Dropdown -->
+ <div class="dropdown d-inline-block ms-2">
+  <button type="button" class="btn btn-sm btn-alt-secondary" id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <i class="fa fa-fw fa-bell"></i>
+    <span class="text-primary">•</span>
+  </button>
+  <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0 border-0 fs-sm" aria-labelledby="page-header-notifications-dropdown">
+    <div class="p-2 bg-body-light border-bottom text-center rounded-top">
+      <h5 class="dropdown-header text-uppercase">Notifications</h5>
+    </div>
+    <ul class="nav-items mb-0">
+      <li>
+        <a class="text-dark d-flex py-2" href="javascript:void(0)">
+          <div class="flex-shrink-0 me-2 ms-3">
+            <i class="fa fa-fw fa-check-circle text-success"></i>
+          </div>
+          <div class="flex-grow-1 pe-2">
+            <div class="fw-semibold">You Uploaded New Document</div>
+            <span class="fw-medium text-muted">15 min ago</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a class="text-dark d-flex py-2" href="javascript:void(0)">
+          <div class="flex-shrink-0 me-2 ms-3">
+            <i class="fa fa-fw fa-plus-circle text-primary"></i>
+          </div>
+          <div class="flex-grow-1 pe-2">
+            <div class="fw-semibold">1 new document sent successfully</div>
+            <span class="fw-medium text-muted">22 min ago</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a class="text-dark d-flex py-2" href="javascript:void(0)">
+          <div class="flex-shrink-0 me-2 ms-3">
+            <i class="fa fa-fw fa-times-circle text-danger"></i>
+          </div>
+          <div class="flex-grow-1 pe-2">
+            <div class="fw-semibold">Auto Extractioin Failed, review the doc manually</div>
+            <span class="fw-medium text-muted">26 min ago</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a class="text-dark d-flex py-2" href="javascript:void(0)">
+          <div class="flex-shrink-0 me-2 ms-3">
+            <i class="fa fa-fw fa-plus-circle text-primary"></i>
+          </div>
+          <div class="flex-grow-1 pe-2">
+            <div class="fw-semibold">2 new docs uploaded, keep it up</div>
+            <span class="fw-medium text-muted">33 min ago</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a class="text-dark d-flex py-2" href="javascript:void(0)">
+          <div class="flex-shrink-0 me-2 ms-3">
+            <i class="fa fa-fw fa-user-plus text-success"></i>
+          </div>
+          <div class="flex-grow-1 pe-2">
+            <div class="fw-semibold">You have a new subscriber</div>
+            <span class="fw-medium text-muted">41 min ago</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a class="text-dark d-flex py-2" href="javascript:void(0)">
+          <div class="flex-shrink-0 me-2 ms-3">
+            <i class="fa fa-fw fa-check-circle text-success"></i>
+          </div>
+          <div class="flex-grow-1 pe-2">
+            <div class="fw-semibold">You have a new doc ready</div>
+            <span class="fw-medium text-muted">42 min ago</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+    <div class="p-2 border-top text-center">
+      <a class="d-inline-block fw-medium" href="javascript:void(0)">
+        <i class="fa fa-fw fa-arrow-down me-1 opacity-50"></i> Load More..
+      </a>
+    </div>
+  </div>
+</div>
+<!-- END Notifications Dropdown -->
           </div>
           <!-- END Right Section -->
         </div>
@@ -491,25 +523,9 @@
             <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center py-2">
               <div class="flex-grow-1">
                 <h1 class="h3 fw-bold mb-2">
-                  Dashboard
+                  Connections
                 </h1>
-                <h2 class="fs-base lh-base fw-medium text-muted mb-0">
-                  Welcome <a href="#" class="fw-semibold" rel="noopener noreferrer">Jhon</a>, Everything Looks Great.
-                </h2>
               </div>
-              <!-- <nav class="flex-shrink-0 mt-3 mt-sm-0 ms-sm-3" aria-label="breadcrumb">
-                <ol class="breadcrumb breadcrumb-alt">
-                  <li class="breadcrumb-item">
-                    <a class="link-fx" href="javascript:void(0)">Dashboard</a>
-                  </li>
-                  <li class="breadcrumb-item">
-                    <a class="link-fx" href="javascript:void(0)">Account</a>
-                  </li>
-                  <li class="breadcrumb-item active" aria-current="page">
-                    Current
-                  </li>
-                </ol>
-              </nav> -->
             </div>
           </div>
         </div>
@@ -519,39 +535,70 @@
         <div class="content">
           <!-- Your Block -->
          <div class="row items-push justify-content-center">
-          <div class="col-sm-4">
-            <div class="block block-rounded h-100 py-4">
+          <div class="col-5">
+            <div class="block block-rounded h-100">
               <div class="block-content d-flex flex-column align-items-center">
 
                 <div class="block-img w-50">
-                  <img src="./assets/media/avatars/add_customer.svg" alt="add customer icon">
+                  <img src="./assets/media/avatars/connections.svg" alt="add software">
                 </div>
 
-                <p class="fw-bold my-4">Add a Client</p>
-                <p class="text-center">Create a space for each client's financial transactions.</p>
-                <button type="button" class="btn btn-sm btn-success">Add a Client</button>
-              </div>
+                <p class="fw-bold my-4">External Connections</p>
+                <p class="">
+                  Your account isn't currently connected with any accounting software. Integrate your account to send data between <code class="fw-bold fs-5">Snap</code> and the other programs you use to keep accurate financial records.
+                </p>
+                <button type="button" class="btn btn-success mt-4" data-bs-toggle="modal" data-bs-target="#modal-block-software">Choose Software</button>
             </div>
           </div>
-
-          <div class="col-sm-4">
-            <div class="block block-rounded h-100 mb-0 py-4">
-              <div class="block-content d-flex flex-column align-items-center">
-
-                <div class="block-img w-50">
-                  <img src="./assets/media/avatars/demo_account.svg" alt="add customer icon">
-                </div>
-
-                <p class="fw-bold my-4">Try the demo account</p>
-                <p class="text-center">Have a play with Prepare, complete with dummy data.</p>
-                <button type="button" class="btn-sm btn btn-light">Launch Demo Account</button>
-              </div>
-            </div>
-          </div>
-
           
          </div>
           <!-- END Your Block -->
+
+          <div class="modal" id="modal-block-software" tabindex="-1" role="dialog" aria-labelledby="modal-block-software" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+              <div class="modal-content">
+                <div class="block block-rounded block-transparent mb-0">
+                  <div class="block-header block-header-default">
+                    <h3 class="block-title">Choose your software for external connection</h3>
+                    <div class="block-options">
+                      <button type="button" class="btn-block-option" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa fa-fw fa-times"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="block-content fs-sm">
+
+                    <p>Accountancy Software</p>
+                    <div class="software-grid">
+
+                      <div class="block">
+                        <div class="border border-2 border-dark h-100 w-25 p-4 mx-auto">
+                   
+                            <img src="./assets/media/photos/xero.png" alt="zero logo">
+                                            
+                        </div>
+                      </div>
+
+                      <div class="block">
+                        <div class="border border-2 border-dark h-100 w-25 pt-5 mx-auto">
+                        
+                            <img src="./assets/media/photos/qb.png" alt="qb logo">
+                                           
+                        </div>
+                      </div>
+                  
+
+                    
+
+                    
+                    </div>
+                   
+                  </div>
+              
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- END Page Content -->
       </main>

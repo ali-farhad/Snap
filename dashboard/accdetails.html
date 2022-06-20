@@ -232,7 +232,7 @@
                   <i class="nav-main-link-icon fa fa-user-tie"></i>
                   <span class="nav-main-link-name">Customers</span>
                 </a>
-                <a class="nav-main-link" href="/dashboard/banks.html">
+                <a class="nav-main-link" href="index.html">
                   <i class="nav-main-link-icon fa fa-building-columns                  "></i>
                   <span class="nav-main-link-name">Bank Accounts</span>
                 </a>
@@ -240,7 +240,7 @@
 
               <li class="nav-main-heading">Connections</li>
               <li class="nav-main-item">
-                <a class="nav-main-link" href="/dashboard/connect.html">
+                <a class="nav-main-link" href="index.html">
                   <i class="nav-main-link-icon fa fa-share-nodes"></i>
                   <span class="nav-main-link-name">Integrations</span>
                 </a>
@@ -259,17 +259,17 @@
                 </a>
                 <ul class="nav-main-submenu">
                   <li class="nav-main-item">
-                    <a class="nav-main-link" href="/dashboard/mydetails.html">
+                    <a class="nav-main-link" href="javascript:void(0)">
                       <span class="nav-main-link-name">My Details</span>
                     </a>
                   </li>
                   <li class="nav-main-item">
-                    <a class="nav-main-link" href="/dashboard/accdetails.html">
+                    <a class="nav-main-link" href="javascript:void(0)">
                       <span class="nav-main-link-name">Account Details</span>
                     </a>
                   </li>
                   <li class="nav-main-item">
-                    <a class="nav-main-link" href="/dashboard/subscription.html">
+                    <a class="nav-main-link" href="javascript:void(0)">
                       <span class="nav-main-link-name">Subscriptions</span>
                     </a>
                   </li>
@@ -491,25 +491,10 @@
             <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center py-2">
               <div class="flex-grow-1">
                 <h1 class="h3 fw-bold mb-2">
-                  Dashboard
+                  Accounts
                 </h1>
-                <h2 class="fs-base lh-base fw-medium text-muted mb-0">
-                  Welcome <a href="#" class="fw-semibold" rel="noopener noreferrer">Jhon</a>, Everything Looks Great.
-                </h2>
               </div>
-              <!-- <nav class="flex-shrink-0 mt-3 mt-sm-0 ms-sm-3" aria-label="breadcrumb">
-                <ol class="breadcrumb breadcrumb-alt">
-                  <li class="breadcrumb-item">
-                    <a class="link-fx" href="javascript:void(0)">Dashboard</a>
-                  </li>
-                  <li class="breadcrumb-item">
-                    <a class="link-fx" href="javascript:void(0)">Account</a>
-                  </li>
-                  <li class="breadcrumb-item active" aria-current="page">
-                    Current
-                  </li>
-                </ol>
-              </nav> -->
+             
             </div>
           </div>
         </div>
@@ -518,39 +503,78 @@
         <!-- Page Content -->
         <div class="content">
           <!-- Your Block -->
-         <div class="row items-push justify-content-center">
-          <div class="col-sm-4">
-            <div class="block block-rounded h-100 py-4">
-              <div class="block-content d-flex flex-column align-items-center">
+          <div id="split-1">
+            <div class="block block-rounded col-8 mx-auto">
+              <div class="block-header py-0 pt-4">
+                <h3 class="block-title">Accounts Details</h3>
+              </div>
+              <div class="block-content block-content-full">
+                <form action="be_forms_elements.html" method="POST" enctype="multipart/form-data" onsubmit="return false;">
+                  <div class="row push">
+                    <div role="separator" class="dropdown-divider m-0"></div>
+                    <div class="col-12">
+                      <div class="col-12">
+                    
+                      <div class="my-4 d-flex justify-content-between align-items-center">
+                        <label class="form-label w-50" for="doc-type-Amount">CRN</label>
+                        <input disabled type="text" class="form-control" name="doc-type-Amount" placeholder="" value="71732171591">
+                      </div>
 
-                <div class="block-img w-50">
-                  <img src="./assets/media/avatars/add_customer.svg" alt="add customer icon">
-                </div>
+                      <div class="my-4 d-flex justify-content-between align-items-center">
+                        <label class="form-label w-50" for="doc-type-TaxAmount">Company Name</label>
+                        <input Disabled type="text" class="form-control" name="doc-type-TaxAmount" placeholder="Last 4 Digits" value="Snap Demo Account">
+                      </div>
 
-                <p class="fw-bold my-4">Add a Client</p>
-                <p class="text-center">Create a space for each client's financial transactions.</p>
-                <button type="button" class="btn btn-sm btn-success">Add a Client</button>
+                      <div class="my-4 d-flex justify-content-between align-items-center">
+                        <label class="form-label w-50" for="doc-type-currency">Base Currency</label>
+                        <select class="form-select" id="doc-type-currency" name="doc-type-currency">
+                          <option selected="">GBP - United Kindgom, Pounds</option>
+                          <option value="1">AED - United Arab Emirates, Dirhams</option>
+                          <option value="2">AUD - Australia, Dollars</option>
+                          <option value="3">CAD - Candian, Dollars</option>
+                          <option value="4">EUR - Euro</option>
+                          <option value="5">GBP - United Kindgom, Pounds</option>
+                        </select>
+                      </div>
+
+                      <div class="my-4 d-flex justify-content-between align-items-center">
+                        <label class="form-label w-50" for="doc-type-acccountry">Account Country</label>
+                        <select class="form-select" name="doc-type-acccountry">
+                          <option selected="">United Kingdom</option>
+                          <option value="1">Afghanistan</option>
+                          <option value="2">Canada</option>
+                          <option value="3">United States</option>
+                          <option value="4">Europe</option>
+                          <option value="5">Pakistan</option>
+                        </select>
+                      </div>
+
+                      <div class="my-4 d-flex justify-content-between align-items-center">
+                        <label class="form-label w-50" for="doc-type-client-type">Account Country</label>
+                        <select class="form-select" name="doc-type-client-type">
+                          <option selected="">Multi-User</option>
+                          <option value="1">Single User</option>
+                        
+                        </select>
+                      </div>
+
+
+                      <div class="row">
+                        <div class="col-12 text-right mt-3">
+                          <span class="d-flex justify-content-end">
+                          <button class="btn btn-small btn-alt-success">Save Details</button>
+                        </span>
+                        
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+            
+                </form>
               </div>
             </div>
           </div>
-
-          <div class="col-sm-4">
-            <div class="block block-rounded h-100 mb-0 py-4">
-              <div class="block-content d-flex flex-column align-items-center">
-
-                <div class="block-img w-50">
-                  <img src="./assets/media/avatars/demo_account.svg" alt="add customer icon">
-                </div>
-
-                <p class="fw-bold my-4">Try the demo account</p>
-                <p class="text-center">Have a play with Prepare, complete with dummy data.</p>
-                <button type="button" class="btn-sm btn btn-light">Launch Demo Account</button>
-              </div>
-            </div>
-          </div>
-
-          
-         </div>
           <!-- END Your Block -->
         </div>
         <!-- END Page Content -->
